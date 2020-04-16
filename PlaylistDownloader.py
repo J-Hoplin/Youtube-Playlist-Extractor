@@ -1,3 +1,7 @@
+#This code and description is written by Hoplin
+#No matter to use it as non-commercial.
+#if there's issue after pip install pytube, install pip install pytube3
+
 from selenium import webdriver
 import time
 from selenium.webdriver.remote.webelement import WebElement
