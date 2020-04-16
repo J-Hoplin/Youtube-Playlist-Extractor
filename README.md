@@ -7,7 +7,7 @@ Youtube playlist Extractor
 
 - Only support Windows 64bit
 
-- What for? : To extract mp3,mp4 files from youtube
+- What for? : To extract mp3,mp4 files from youtube playlist automatically
 
 - **Warning : You shouldn't use openly or share downloaded mp3 or mp4 files. If you violate this, you can be punished by copyright law.** 
 ***
