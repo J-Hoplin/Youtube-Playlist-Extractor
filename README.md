@@ -23,7 +23,7 @@ Youtube playlist Extractor
 
 - I just make this code as toy project. Do not use this software in bad intention. 
 
-- **I highly recommend to [Youtube Premium](https://www.youtube.com/premium) payment to save videos and listen as mp3.**
+- **I highly recommend to use [Youtube Premium](https://www.youtube.com/premium) payment to save videos and listen as mp3.**
 
 - **이 프로그램 대신 유튜브 프리미엄 사용을 강력히 권장드립니다.**
 ***
