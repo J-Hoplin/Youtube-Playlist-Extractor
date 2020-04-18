@@ -40,4 +40,4 @@ Youtube playlist Extractor
     
 4. mp4 files goes to mp4 directory of playlist, and mp3 files goes to mp3 directory of playlist
 
-    ![img[(imggg/3.PNG)
+    ![img](imggg/3.PNG)
