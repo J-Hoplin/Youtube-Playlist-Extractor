@@ -37,3 +37,7 @@ Youtube playlist Extractor
 3. After you enter playlist URL, software will download automatically all of the files in playlist.
 
     ![img](imggg/1.PNG)
+    
+4. mp4 files goes to mp4 directory of playlist, and mp3 files goes to mp3 directory of playlist
+
+    ![img[(imggg/3.PNG)
