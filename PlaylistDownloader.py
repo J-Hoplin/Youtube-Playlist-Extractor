@@ -19,7 +19,6 @@ import time
 import re
 from tqdm import tqdm
 import glob
-import sys
 
 YT = 'https://www.youtube.com'
 
@@ -54,14 +53,13 @@ class getPlaylistURLs:
                 return
 
     def ReturnURLsAsList(self,URL):
+        print("Redirecting Client.... it'll take a second")
         options = webdriver.ChromeOptions()
         # Connect as headless brower. If not, youtube server recognize request as bot.
         options.add_argument('headless')
         driver = webdriver.Chrome(executable_path='chromedriver.exe',chrome_options=options)
         url = URL
         driver.get(url)
-        os.system('cls')
-        print("Redirecting Client.... it'll take a second")
         self.RedirectionLoader(driver)
         #In selenum they call 'class' as 'CLASS_NAME' beacause there's class method is java version selenium
         videorenderTags = driver.find_elements(By.CLASS_NAME, 'style-scope ytd-playlist-video-renderer')
@@ -125,7 +123,8 @@ while outer_loop:
                         os.system('cls')
                     else:
                         os.mkdir(program_dir + '\\' + finalDirectoryName + "\\")
-                        downloadDirectory = program_dir + '\\' + finalDirectoryName # + "\\"
+                        os.mkdir(program_dir + '\\' + finalDirectoryName + "\\"+"mp4")
+                        downloadDirectory = program_dir + '\\' + finalDirectoryName + "\\" + "mp4"
                         print("Now downloading files(Total "+str(len(ulist))+"links searched)...")
                         print("The download speed may vary depending on the number and size of images and the Internet environment...")
                         try:
@@ -137,7 +136,6 @@ while outer_loop:
                                 title = defaultname.split('.mp4')[0]
                                 '''
                                 Through this method, can't make mp4 -> mp3
-                                
                                 title = YTu.title
                                 YTu.streams.filter(file_extension='mp4').first().download(
                                     downloadDirectory)
@@ -207,4 +205,3 @@ while outer_loop:
         print("Unexpected Error.... Reload initial page.....")
         time.sleep(2.5)
         os.system('cls')
-
